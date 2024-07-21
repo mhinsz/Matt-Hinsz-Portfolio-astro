@@ -16,7 +16,12 @@ const inputClasses = 'border-indigo-950 w-full bg-gradient-to-b text-indigo-950 
 			</Hero>
 
 			<section class="flex justify-center">
-				<form name="contact" method="post" netlify class="w-full md:w-1/2">
+				<form name="contact" method="post" class="w-full md:w-1/2" data-netlify="true" netlify-honeypot="bot-field">
+					<p class="hidden">
+						<label>
+						  Don’t fill this out if you’re human: <input name="bot-field" />
+						</label>
+					</p>
 					<input type="hidden" name="form-name" value="contact" />
 					<div>
 						<label for='name' class={labelClasses}>Name</label>
