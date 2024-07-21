@@ -20,36 +20,37 @@ import SkillItem from "../components/SkillItem.jsx";
 			</Hero>
 
 			<section>
-				<div class="w-full md:w-2/3 md:pr-8 my-6">
+				<div class="flex flex-wrap">
+					<div class="w-full md:w-2/3 md:pr-8 my-6">
 
-					<div class="flex w-full ">
-						<p class="resume-title">Experience</p>
-						<div class="w-full border-b-4 border-indigo-950 mb-2 ml-2"></div>
-					</div>
-	
-					{RESUME_ITEMS.map((item) => (
-						<div class="pt-8">
-							<ResumeItem {...item} />
+						<div class="flex w-full ">
+							<p class="resume-title">Experience</p>
+							<div class="w-full border-b-4 border-indigo-950 mb-2 ml-2"></div>
 						</div>
-					))} 
+		
+						{RESUME_ITEMS.map((item) => (
+							<div class="pt-8">
+								<ResumeItem {...item} />
+							</div>
+						))} 
+						
+					</div>
+
+					<div class="w-full md:w-1/3 my-6">
 					
-				</div>
-
-				<div class="w-full md:w-1/3 my-6">
-                
-					<div class="flex w-full ">
-						<p class="resume-title">Skills</p>
-						<div class="w-full border-b-4 border-indigo-950 mb-2 ml-2"></div>
-					</div>
-	
-					{SKILL_ITEMS.map((item) => (
-						<div>
-							<SkillItem {...item} />
+						<div class="flex w-full ">
+							<p class="resume-title">Skills</p>
+							<div class="w-full border-b-4 border-indigo-950 mb-2 ml-2"></div>
 						</div>
-					))}
-	
+		
+						{SKILL_ITEMS.map((item) => (
+							<div>
+								<SkillItem {...item} />
+							</div>
+						))}
+		
+					</div>
 				</div>
-
 			</section>
 			
 		</main>
