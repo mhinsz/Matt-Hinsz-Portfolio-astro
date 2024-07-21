@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+
+import { RESUME_ITEMS, SKILL_ITEMS } from '../resume.js';
+
+import ResumeItem from "../components/ResumeItem.jsx";
+import SkillItem from "../components/SkillItem.jsx";
+
+---
+
+<BaseLayout title="Resume | Matt Hinsz" description="Matt Hinsz Resume">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="Resume"
+			>
+			</Hero>
+
+			<section>
+				<div class="w-full md:w-2/3 md:pr-8 my-6">
+
+					<div class="flex w-full ">
+						<p class="resume-title">Experience</p>
+						<div class="w-full border-b-4 border-indigo-950 mb-2 ml-2"></div>
+					</div>
+	
+					{RESUME_ITEMS.map((item) => (
+						<div class="pt-8">
+							<ResumeItem {...item} />
+						</div>
+					))} 
+					
+				</div>
+
+				<div class="w-full md:w-1/3 my-6">
+                
+					<div class="flex w-full ">
+						<p class="resume-title">Skills</p>
+						<div class="w-full border-b-4 border-indigo-950 mb-2 ml-2"></div>
+					</div>
+	
+					{SKILL_ITEMS.map((item) => (
+						<div>
+							<SkillItem {...item} />
+						</div>
+					))}
+	
+				</div>
+
+			</section>
+			
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		gap: 0.5rem;
+		color: var(--gray-200);
+		box-sizing: border-box;
+	}
+
+	.section-title {
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+	.resume-title {
+		font-family: "JetAirliner", sans-serif;
+		font-size: 36px;
+	}
+	
+	@media (min-width: 50em) {
+		section {
+			font-size: var(--text-lg);
+		}
+	}
+</style>
