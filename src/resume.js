@@ -68,7 +68,7 @@ export const RESUME_ITEMS = [
     company: 'FanThreeSixty',
     title:'Freelance Developer',
     location:'Leawood, KS',
-    dates:'Apr 2024 - Jun 2024',
+    dates:'Apr 2024 - Jul 2024',
     details: [
       'Completed a comprehensive website refresh, utilizing HubSpot CMS to enhance user experience and optimize site performance.',
     ],
