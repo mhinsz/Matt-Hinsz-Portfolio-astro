@@ -23,6 +23,19 @@ const { title, description } = Astro.props;
 
 		<ViewTransitions fallback="swap" />
 	</head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-13X2DQPP1L"></script>
+	<script>
+		var host = window.location.hostname;
+		if(host != "localhost")
+		{
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+	
+		  gtag('config', 'G-13X2DQPP1L'); 
+		}
+	</script>
 	<body>
 		<div class="stack backgrounds">
 			<Nav />
