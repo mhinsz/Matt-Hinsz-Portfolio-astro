@@ -79,8 +79,30 @@
 
 	/* Transitions */
 	--theme-transition: 0.2s ease-in-out;
+	
 }
 
+@keyframes hueRotate {
+	0% {
+		-webkit-filter: hue-rotate(0deg); 
+		filter: hue-rotate(0deg);
+	  }
+	  100% {
+		-webkit-filter: hue-rotate(360deg); 
+		filter: hue-rotate(360deg);
+	  }
+}
+
+@keyframes hueRotateInverse {
+	0% {
+		-webkit-filter: hue-rotate(0deg); 
+		filter: hue-rotate(0deg);
+	  }
+	  100% {
+		-webkit-filter: hue-rotate(-360deg); 
+		filter: hue-rotate(-360deg);
+	  }
+}
 :root.theme-dark {
 	--gray-0: #ffffff;
 	--gray-50: #eef2ff;
