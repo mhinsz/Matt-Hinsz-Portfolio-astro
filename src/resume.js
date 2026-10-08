@@ -14,7 +14,7 @@ export const SKILL_ITEMS = [
     id:'s2',
     title:'Front-End Frameworks and Libraries:',
     items:[
-      'React',
+      'Twig',
       'Astro',
       'JQuery',
       'Bootstrap',
@@ -64,6 +64,18 @@ export const SKILL_ITEMS = [
 export const RESUME_ITEMS = [
   {
     id: 'r0',
+    company: 'M Agency',
+    title:'Developer',
+    location:'Tacoma, WA',
+    dates:'Feb 2025 - Present',
+    details: [
+      'Develop custom WordPress sites for clients across diverse industries, translating Figma designs into responsive, accessible experiences using Twig, Tailwind, and custom WordPress themes.',
+      'Maintain and enhance a portfolio of 70+ hosted WordPress websites, implementing updates, troubleshooting issues, and proactively addressing performance, security, and functionality needs.',
+      'Leverage AI-assisted development tools, including Claude Code, to streamline development workflows, improve productivity, and accelerate project delivery.',
+    ],
+  },
+  {
+    id: 'r1',
     company: 'FanThreeSixty',
     title:'Freelance Developer',
     location:'Leawood, KS',
@@ -73,7 +85,7 @@ export const RESUME_ITEMS = [
     ],
   },
   {
-    id: 'r1',
+    id: 'r2',
     company: 'Signal Theory',
     title:'Developer',
     location:'Kansas City, MO',
@@ -84,7 +96,7 @@ export const RESUME_ITEMS = [
     ],
   },
   {
-    id: 'r2',
+    id: 'r3',
     company: 'Trozzolo Communications',
     title:'Web Developer',
     location:'Kansas City, MO',
@@ -95,7 +107,7 @@ export const RESUME_ITEMS = [
     ],
   },
   {
-    id: 'r3',
+    id: 'r4',
     company: 'Fred Pryor Seminars',
     title:'Developer',
     location:'Leawood, KS',
@@ -105,7 +117,7 @@ export const RESUME_ITEMS = [
     ],
   },
   {
-    id: 'r4',
+    id: 'r5',
     company: 'Microtech Computers',
     title:'Web Developer/Designer',
     location:'Lawrence, KS',
@@ -116,7 +128,7 @@ export const RESUME_ITEMS = [
     ],
   },
   {
-    id: 'r5',
+    id: 'r6',
     company: 'KU International Student Services',
     title:'Developer',
     location:'Lawrence, KS',
